@@ -4,6 +4,7 @@ import upload from "../config/multerConfig.js";
 import fs from "fs";
 const router = express.Router();
 
+// READ
 router.get("/", async (req, res) => {
   try {
     const cats = await Cat.find();
@@ -13,6 +14,7 @@ router.get("/", async (req, res) => {
   }
 });
 
+// CREATE
 router.post("/", upload.single("image"), async (req, res) => {
   try {
     const { name, age, isAdopted, desc } = req.body;
@@ -38,6 +40,7 @@ router.post("/", upload.single("image"), async (req, res) => {
   }
 });
 
+// get specific cat
 router.get("/:id", async (req, res) => {
   try {
     const cat = await Cat.findById(req.params.id);
@@ -47,6 +50,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+// UPDATE
 router.put("/:id", upload.single("image"), async (req, res) => {
   try {
     const { name, age, isAdopted, desc } = req.body;
@@ -74,7 +78,7 @@ router.put("/:id", upload.single("image"), async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
-
+// DELETE
 router.delete("/:id", async (req, res) => {
   try {
     const deletedCat = await Cat.findByIdAndDelete(req.params.id);
