@@ -3,11 +3,14 @@ import cors from "cors";
 import catRoutes from "./routes/catRoutes.js";
 import inquiryRoutes from "./routes/inquiryRoutes.js";
 import volunteerRoutes from "./routes/volunteerRoutes.js";
+import connectDB from "./config/db.js";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+connectDB();
 
 app.use("/api/cats", catRoutes);
 app.use("/api/inquiries", inquiryRoutes);
