@@ -9,6 +9,10 @@ const catSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  gender: {
+    type: String,
+    required: true,
+  },
   isAdopted: {
     type: Boolean,
     default: false,
