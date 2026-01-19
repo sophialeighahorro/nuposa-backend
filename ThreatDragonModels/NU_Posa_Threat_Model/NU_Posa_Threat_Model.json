@@ -1,0 +1,16 @@
+{
+  "version": "2.5.0",
+  "summary": {
+    "title": "NU_Posa_Threat_Model",
+    "owner": "Sophia Leigh Ahorro",
+    "description": "NU Posa is a MERN stack web application consisting of a React frontend, a Node.js and Express backend, and a MongoDB database. Users can view campus cats and submit adoption or volunteer applications, while administrators manage cat records and adoption statuses. External email services are used to handle volunteer communication.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
