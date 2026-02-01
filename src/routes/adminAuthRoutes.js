@@ -1,23 +1,27 @@
 import express from "express";
-import bcrypt from "bcryptjs"; // SECURITY: For comparing hashes
-import rateLimit from "express-rate-limit"; // SECURITY: For blocking brute force
-import Admin from "../models/Admin.js"; // Import your Model
+import bcrypt from "bcryptjs"; 
+import rateLimit from "express-rate-limit"; 
+import Admin from "../models/Admin.js"; 
 import { issueAdminToken } from "../middleware/auth.js";
+import logger from "../config/logger.js"; // ✅ Imported
 
 const router = express.Router();
 
 // SECURITY: Brute Force Protection
-// "Enforce account disabling after an established number of invalid login attempts"
 const loginLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 5, // Limit each IP to 5 login requests per window
+  windowMs: 15 * 60 * 1000, 
+  max: 5, 
   message: { message: "Too many login attempts, please try again after 15 minutes" },
   standardHeaders: true,
   legacyHeaders: false,
+  // NEW: Log when someone gets blocked by the rate limiter
+  handler: (req, res, next, options) => {
+    logger.warn(`Brute force blocked: IP ${req.ip} exceeded login limits.`);
+    res.status(options.statusCode).send(options.message);
+  }
 });
 
 // POST /api/admin/auth/login
-// Apply the limiter middleware only to this route
 router.post("/login", loginLimiter, async (req, res) => {
   try {
     const { username, password } = req.body || {};
@@ -31,20 +35,24 @@ router.post("/login", loginLimiter, async (req, res) => {
     const admin = await Admin.findOne({ username });
 
     // 3. Check Password (Secure Comparison)
-    // "Authentication failure responses should not indicate which part was incorrect"
-    // If admin is not found, we still say "Invalid credentials"
     const isMatch = admin ? await bcrypt.compare(password, admin.password) : false;
 
     if (!isMatch) {
+      // ✅ SECURITY LOG: Log the failure (Requirement: "Log all authentication attempts, especially failures")
+      logger.warn(`Failed login attempt for username: ${username} from IP: ${req.ip}`);
       return res.status(401).json({ message: "Invalid credentials" });
     }
 
     // 4. Success
+    // ✅ SECURITY LOG: Log the success
+    logger.info(`Successful login for admin: ${username}`);
+    
     const token = issueAdminToken();
     return res.status(200).json({ token });
 
   } catch (error) {
-    console.error("Login error:", error);
+    // ✅ SECURITY LOG: Use logger instead of console.error
+    logger.error(`System error during login: ${error.message}`);
     res.status(500).json({ message: "Server error" });
   }
 });
