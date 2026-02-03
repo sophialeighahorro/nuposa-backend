@@ -1,8 +1,7 @@
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv"; 
-import mongoSanitize from "express-mongo-sanitize"; 
-import helmet from "helmet"; // NEW: Fixes OWASP Header Vulnerabilities
+import dotenv from "dotenv";
+import helmet from "helmet"; // 🛡️ Security Headers
 
 // Import Routes
 import catRoutes from "./routes/catRoutes.js";
@@ -12,42 +11,60 @@ import adoptionRoutes from "./routes/adoptionRoutes.js";
 import adminAuthRoutes from "./routes/adminAuthRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
 
-// Import Database & Error Handling Tools
+// Import Database & Error Tools
 import connectDB from "./config/db.js";
-import errorHandler from "./middleware/errorHandler.js"; 
-import logger from "./config/logger.js"; 
+import errorHandler from "./middleware/errorHandler.js";
+import logger from "./config/logger.js";
 
-// Load environment variables immediately
 dotenv.config();
 
 const app = express();
 
 // ==========================================
-// SECURITY MIDDLEWARE LAYER
+// 🛡️ SECURITY & CONFIGURATION
 // ==========================================
 
-// 1. HELMET: Sets HTTP headers to stop Clickjacking, XSS, and Sniffing
-// Checklist: "Missing Anti-clickjacking Header", "CSP Header Not Set", "X-Content-Type-Options Missing"
-app.use(helmet());
-
-// 2. CORS: Allow cross-origin requests (Configure strictly for production!)
+// 1. HELMET: Secure HTTP Headers
+// 1. HELMET: Secure HTTP Headers
+// We disable 'crossOriginResourcePolicy' so the Frontend can fetch data
+app.use(helmet({
+  crossOriginResourcePolicy: false,
+}));
+// 2. CORS: Allow browser requests
 app.use(cors());
 
-// 3. BODY PARSER: Parse incoming JSON
+// 3. BODY PARSER: Read JSON inputs
 app.use(express.json());
 
-// 4. MONGO SANITIZE: Prevent NoSQL Injection (removes $ and . from inputs)
-// Checklist: "Controls for hazardous characters"
-app.use(mongoSanitize());
+// 4. MANUAL MONGO SANITIZE (The Fix)
+// Replaces the broken library. Removes '$' and '.' from inputs to prevent Injection.
+app.use((req, res, next) => {
+  const sanitize = (obj) => {
+    if (obj instanceof Object) {
+      for (const key in obj) {
+        if (/^\$/.test(key) || key.includes('.')) {
+          // Delete dangerous keys (starting with $ or containing .)
+          delete obj[key];
+        } else {
+          sanitize(obj[key]); // Recursively clean nested objects
+        }
+      }
+    }
+  };
+  
+  // Clean all input locations
+  sanitize(req.body);
+  sanitize(req.query);
+  sanitize(req.params);
+  
+  next();
+});
 
 // ==========================================
-// CONNECT DATABASE
+// 🔌 DATABASE & ROUTES
 // ==========================================
 connectDB();
 
-// ==========================================
-// ROUTES
-// ==========================================
 app.use("/api/cats", catRoutes);
 app.use("/api/inquiries", inquiryRoutes);
 app.use("/api/volunteers", volunteerRoutes);
@@ -58,7 +75,7 @@ app.use("/api/admin", adminRoutes);
 // Base Route
 app.get("/", (req, res) => {
   console.log("Browser route successful.");
-  res.send("HI MGA POSA (Secure Mode + Helmet Enabled 🪖)");
+  res.send("HI MGA POSA (Secure Mode + Manual Sanitize 🛡️)");
 });
 
 // Test Route for Logging
@@ -67,10 +84,7 @@ app.get("/error-test", (req, res, next) => {
   next(error); 
 });
 
-// ==========================================
-// ERROR HANDLING (Must be last)
-// ==========================================
-// Checklist: "Use error handlers that do not display debugging info"
+// Global Error Handler (Must be last)
 app.use(errorHandler);
 
 export default app;

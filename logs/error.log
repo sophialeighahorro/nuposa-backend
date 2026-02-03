@@ -1,0 +1,253 @@
+2026-02-01T17:42:46.834Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at read (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:54:5)
+    at jsonParser (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\types\json.js:90:5)
+2026-02-01T17:42:55.449Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:09.380Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:09.588Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:09.737Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:09.896Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:10.047Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:10.211Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:10.352Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:10.503Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:10.661Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:10.810Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:10.967Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:11.125Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:11.291Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:11.454Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:11.635Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:11.808Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:11.972Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:12.144Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-01T17:43:12.482Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:172:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+2026-02-03T11:49:57.625Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at read (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:54:5)
+    at jsonParser (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\types\json.js:90:5)
+2026-02-03T11:49:57.747Z [ERROR]: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:342:13)
+    at C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\router\index.js:291:5)
+    at read (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\read.js:54:5)
+    at jsonParser (C:\Users\Sophia\nuposa-infosec\nuposa-backend\node_modules\body-parser\lib\types\json.js:90:5)
