@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "89ce879b-8879-4ee1-8d28-9d87cade9d22",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Public User",
@@ -155,6 +155,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -238,7 +239,6 @@
               ]
             },
             "id": "7ff50985-ae53-4c5b-b5b1-cce3e19812e6",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Admin",
@@ -272,6 +272,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -355,7 +356,6 @@
               ]
             },
             "id": "8e1d761b-24f1-453c-a44d-93c1edecfdaf",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Web App\n(Frontend)",
@@ -427,6 +427,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -545,8 +546,7 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "zIndex": 4
+            }
           },
           {
             "position": {
@@ -569,6 +569,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -652,7 +653,6 @@
               ]
             },
             "id": "6903b98c-ed89-4333-b28a-f4da343b0ae5",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Email\nService",
@@ -692,6 +692,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -775,7 +776,6 @@
               ]
             },
             "id": "e2f5f9ed-e444-4efd-8766-1412db992074",
-            "zIndex": 6,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
@@ -1008,6 +1008,26 @@
               "cell": "8e1d761b-24f1-453c-a44d-93c1edecfdaf",
               "port": "6f15afd3-c791-4824-81f1-bbfa425a8d25"
             },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            },
             "vertices": [
               {
                 "x": 390,
@@ -1017,17 +1037,7 @@
                 "x": 410,
                 "y": 310
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
